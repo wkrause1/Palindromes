@@ -28,10 +28,17 @@ package body wordpkg.wordops is
    ----------------------
 
    function remove_NonLetter (w: Word) return Word is
+      nonletter_word : Word;
+      counter: Natural := 1;
    begin
-      --  Generated stub: replace with real body!
-      pragma Compile_Time_Warning (Standard.True, "remove_NonLetter unimplemented");
-      return raise Program_Error with "Unimplemented function remove_NonLetter";
+      for I in 1..w.Length loop
+         if Is_Letter(w.Letters(I)) then
+            nonletter_word.Letters(counter) := w.Letters(I);
+            counter := counter + 1;
+         end if;
+      end loop;
+      nonletter_word.Length := counter - 1;
+      return nonletter_word;
    end remove_NonLetter;
 
    ----------------------
@@ -39,10 +46,17 @@ package body wordpkg.wordops is
    ----------------------
 
    procedure remove_NonLetter (w: in out Word) is
+      counter: Natural := 1;
+      new_string: String(1..w.Length);
    begin
-      --  Generated stub: replace with real body!
-      pragma Compile_Time_Warning (Standard.True, "remove_NonLetter unimplemented");
-      raise Program_Error with "Unimplemented procedure remove_NonLetter";
+      for I in 1..w.Length loop
+         if Is_Letter(w.Letters(I)) then
+            new_string(counter) := w.Letters(I);
+            counter := counter + 1;
+         end if;
+      end loop;
+      w.Letters := new_string;
+      w.Length := counter - 1;
    end remove_NonLetter;
 
 end wordpkg.wordops;

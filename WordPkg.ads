@@ -27,7 +27,7 @@ package WordPkg is
     function "<="  (X, Y : Word) return Boolean;
     function "<" (X, Y : Word) return Boolean;
     function ">=" (X, Y : Word) return Boolean;
-   function ">"  (X, Y : Word) return Boolean;
+    function ">"  (X, Y : Word) return Boolean;
 
     -- I/O routines
 

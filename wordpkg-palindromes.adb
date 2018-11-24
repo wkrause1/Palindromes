@@ -7,9 +7,12 @@ package body WordPkg.Palindromes is
 
    function is_Pal (w: Word) return Boolean is
    begin
-      --  Generated stub: replace with real body!
-      pragma Compile_Time_Warning (Standard.True, "is_Pal unimplemented");
-      return raise Program_Error with "Unimplemented function is_Pal";
+      for Offset in 0..w.Length / 2 - 1 loop
+         if w.Letters (w.Letters'First + Offset) /= w.Letters (w.Length - Offset) then
+            return False;
+         end if;
+      end loop;
+      return True;
    end is_Pal;
 
 end WordPkg.Palindromes;
