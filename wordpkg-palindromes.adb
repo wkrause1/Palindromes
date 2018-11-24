@@ -1,6 +1,5 @@
 pragma Ada_2012;
 package body WordPkg.Palindromes is
-
    ------------
    -- is_Pal --
    ------------
