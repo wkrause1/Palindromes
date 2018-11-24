@@ -1,0 +1,109 @@
+V "GNAT Lib v2018"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U wordpkg%b		wordpkg.adb		ed62f2f2 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U wordpkg%s		wordpkg.ads		4a191402 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+D wordpkg.ads		20181124033148 c204a758 wordpkg%s
+D wordpkg.adb		20181124033148 a77be6f0 wordpkg%b
+X 1 ada.ads
+16K9*Ada 20e8 23|5r6 5r23 24|5r6 5r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 23|5w10 5r27 24|5w10 5r27
+52P9*File_Type 23|38r27 42r27 24|70r35 93r27 131r27
+117V13*Standard_Input{52P9} 24|127s14
+118V13*Standard_Output{52P9} 24|140s14
+168U14*Skip_Line 24|78s17
+183V13*End_Of_File{boolean} 24|75s23 101s27
+205U14*Get 24|83s17 107s17
+207U14*Put 24|134s13
+210U14*Look_Ahead 24|76s13 102s17
+X 23 wordpkg.ads
+7i4 MaxWordSize{natural} 48r28 24|26r16 110r34
+8k9*WordPkg 7z4 47E10 52l5 52e12 24|6b14 143l5 143t12
+10R10*word 15r45 18r29 26r27 27r28 28r26 29r27 30r27 38r49 39r31 42r45 43r27
+. 47c10 50e15 24|9r45 10r18 18r29 32r27 38r28 50r26 55r27 60r27 93r49 125r31
+. 131r45 138r27
+12X5*WordTooLong 24|120r23
+15V14*New_Word{10R10} 15>23 24|9b14 15l9 15t17
+15a23 Item{string} 24|9b23 12r27 12r43 13r26
+18V14*Length{natural} 18>22 24|18b14 21l9 21t15 133s21
+18r22 Item{10R10} 24|18b22 20r16
+21V14*Max_Word_Size{positive} 24|24b14 27l9 27t22
+26V15*"="{boolean} 26>20 26>23 24|32b15 36l10 36t12 52s34
+26r20 X{10R10} 24|32b20 34r16 35r13 35r26
+26r23 Y{10R10} 24|32b23 34r27 35r38 35r51
+27V15*"<="{boolean} 27>21 27>24 24|38b15 48l10 48t13 52s18 62s23
+27r21 X{10R10} 24|38b21 40r34 41r16 43r19 47r16
+27r24 Y{10R10} 24|38b24 40r44 41r31 43r34 47r28
+28V15*"<"{boolean} 28>19 28>22 24|50b15 53l10 53t12 57s23
+28r19 X{10R10} 24|50b19 52r16 52r32
+28r22 Y{10R10} 24|50b22 52r21 52r36
+29V15*">="{boolean} 29>20 29>23 24|55b15 58l10 58t13
+29r20 X{10R10} 24|55b20 57r21
+29r23 Y{10R10} 24|55b23 57r25
+30V15*">"{boolean} 30>20 30>23 24|60b15 63l10 63t12
+30r20 X{10R10} 24|60b20 62r21
+30r23 Y{10R10} 24|60b23 62r26
+38U15*Get 38>20 38<38 24|93b15 123l9 123t12 127s9
+38p20 File{6|52P9} 24|93b20 99r26 101r40 102r29 107r22
+38r38 Item{10R10} 24|93b38 98m9 110r20 115m21 115r36 116m21 116r34
+39U15*Get 39<20 24|125b15 128l9 128t12
+39r20 Item{10R10} 24|125b20 127m30
+42U15*Put 42>20 42>38 24|131b15 136l9 136t12 140s9
+42p20 File{6|52P9} 24|131b20 134r18
+42r38 Item{10R10} 24|131b38 133r28 134r24
+43U15*Put 43>20 24|138b15 141l9 141t12
+43r20 Item{10R10} 24|138b20 140r31
+48a9 Letters{string} 24|12m16 35r15 35r40 41r18 41r33 43r21 43r36 116m26
+. 134r29
+49i9 Length{natural} 24|13m16 20r21 34r18 34r29 35r28 35r53 40r36 40r46 47r18
+. 47r30 98m14 110r25 115m26 115r41 116r39
+X 24 wordpkg.adb
+10r9 A_Word{23|10R10} 12m9 13m9 14r16
+40i13 I{integer} 41r26 41r41 43r29 43r44
+70V14 Another_Word{boolean} 70b14 70>28 87l9 87t21 99s12
+70p28 File{6|52P9} 75r36 76r25 78r28 83r22
+71e9 C{character} 76m31 80r20 80r33 83m28
+72b9 End_Line{boolean} 76m34 77r16
+94e9 C{character} 102m35 105r27 105r43 107m28 116r50
+95b9 End_Line{boolean} 102m38 104r27
+96b9 TooLong{boolean} 111m21 114r24 119r16
+133i13 I{integer} 134r37
+

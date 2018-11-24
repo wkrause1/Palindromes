@@ -1,0 +1,51 @@
+V "GNAT Lib v2018"
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U wordpkg.palindromes%b	wordpkg-palindromes.adb	91d5a1b1 NE OO PK GE
+W wordpkg%s		wordpkg.adb		wordpkg.ali
+
+U wordpkg.palindromes%s	wordpkg-palindromes.ads	f5cf9e79 BN EE NE OO PK GE
+W wordpkg%s		wordpkg.adb		wordpkg.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-except.ads		20180524051735 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051736 491b781d ada.tags%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051736 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-secsta.ads		20180524051736 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051735 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051736 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051736 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051736 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+D wordpkg.ads		20181124033148 c204a758 wordpkg%s
+D wordpkg-palindromes.ads  20181124033148 37cb3921 wordpkg.palindromes%s
+D wordpkg-palindromes.adb  20181124034721 a61e9890 wordpkg.palindromes%b
+X 23 wordpkg.ads
+8k9*WordPkg 52e12 24|6r9 8r5 25|2r14 17r5
+10R10*word 50e15 24|7r24 25|7r24
+48a9 Letters{string} 25|10r15 10r26 10r55
+49i9 Length{natural} 25|9r26 10r66
+X 24 wordpkg-palindromes.ads
+6k17 Palindromes 23|8k9 24|8l13 8e24 25|2b22 17l13 17t24
+7V14*is_Pal{boolean} 7>21 25|7b13 15l8 15t14
+7r21 w{23|10R10} 25|7b21 9r24 10r13 10r24 10r53 10r64
+X 25 wordpkg-palindromes.adb
+9i11 Offset{integer} 10r42 10r75
+

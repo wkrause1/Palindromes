@@ -16,8 +16,50 @@ procedure pals is
    use pal;
 
    possible_pal : word;
-   new_word : word;
+   remove_noletter : word;
+   upper_case : word;
+   non_letter_and_upper : word;
 begin
    while not End_Of_File loop
+        get(possible_pal);
+        remove_noletter := remove_nonletter(possible_pal);
+        upper_case := to_upper(possible_pal);
+        non_letter_and_upper := remove_nonletter(upper_case);
+        if is_pal(possible_pal) then
+            put("String: ");
+            put(possible_pal);
+            new_line;
+            put_line("Palindrome as is.");
+        elsif is_pal(remove_noletter) then
+            put("String: ");
+            put(possible_pal);
+            new_line;
+            put_line("Palindrome with non-letters removed.");
+            put("Palindrome String: ");
+            put(remove_noletter);
+            new_line;
+        elsif is_pal(upper_case) then
+            put("String: ");
+            put(possible_pal);
+            new_line;
+            put_line("Palindrome when converted to upper case.");
+            put("Palindrome String: ");
+            put(upper_case);
+            new_line;
+        elsif is_pal(non_letter_and_upper) then
+            put("String: ");
+            put(possible_pal);
+            new_line;
+            put_line("Palindrome with non-letters removed and converted to upper case.");
+            put("Palindrome String: ");
+            put(non_letter_and_upper);
+            new_line;
+        else
+            put("String: ");
+            put(possible_pal);
+            new_line;
+            put_line("Never a palindrome");
+        end if;
+        new_line;
     end loop;
 end pals;
