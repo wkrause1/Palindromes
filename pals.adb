@@ -29,12 +29,14 @@ begin
             put("String: ");
             put(possible_pal);
             new_line;
-            put_line("Palindrome as is.");
+            put("Status: ");
+            put_line("Palindrome as is");
         elsif is_pal(remove_noletter) then
             put("String: ");
             put(possible_pal);
             new_line;
-            put_line("Palindrome with non-letters removed.");
+            put("Status: ");
+            put_line("Palindrome when non-letters are removed.");
             put("Palindrome String: ");
             put(remove_noletter);
             new_line;
@@ -42,7 +44,8 @@ begin
             put("String: ");
             put(possible_pal);
             new_line;
-            put_line("Palindrome when converted to upper case.");
+            put("Put: ");
+            put_line("Palindrome when converted to upper case");
             put("Palindrome String: ");
             put(upper_case);
             new_line;
@@ -50,7 +53,8 @@ begin
             put("String: ");
             put(possible_pal);
             new_line;
-            put_line("Palindrome with non-letters removed and converted to upper case.");
+            put("Status: ");
+            put_line("Palindrome when converted to upper case and non-letters are removed");
             put("Palindrome String: ");
             put(non_letter_and_upper);
             new_line;
@@ -58,8 +62,12 @@ begin
             put("String: ");
             put(possible_pal);
             new_line;
+            put("Status: ");
             put_line("Never a palindrome");
         end if;
         new_line;
     end loop;
+    exception
+        when WordTooLong => 
+            put_line("Sorry, word length was longer than allowed. Please shorten word and try again.");
 end pals;

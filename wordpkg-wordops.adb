@@ -47,7 +47,7 @@ package body wordpkg.wordops is
 
    procedure remove_NonLetter (w: in out Word) is
       counter: Natural := 1;
-      new_string: String(1..w.Length);
+      new_string: String(1..w.Letters'length);
    begin
       for I in 1..w.Length loop
          if Is_Letter(w.Letters(I)) then

@@ -7,7 +7,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U wordpkg.wordops%b	wordpkg-wordops.adb	8f685d09 NE OO PK GE IL
+U wordpkg.wordops%b	wordpkg-wordops.adb	303341ea NE OO PK GE IL
 W ada%s			ada.ads			ada.ali
 W ada.characters%s	a-charac.ads		a-charac.ali
 W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
@@ -42,7 +42,7 @@ D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
 D wordpkg.ads		20181124033148 c204a758 wordpkg%s
 D wordpkg-wordops.ads	20181124033148 cbd98e25 wordpkg.wordops%s
-D wordpkg-wordops.adb	20181124033148 52b07623 wordpkg.wordops%b
+D wordpkg-wordops.adb	20181124064303 edeb6ac0 wordpkg.wordops%b
 X 1 ada.ads
 16K9*Ada 20e8 27|2r6 2r35 13r29 23r20
 X 2 a-charac.ads
@@ -55,9 +55,9 @@ X 25 wordpkg.ads
 8k9*WordPkg 52e12 26|2r9 8r5 27|3r14 62r5
 10R10*word 50e15 26|3r26 3r39 4r33 6r34 6r47 7r41 27|9r26 9r39 10r19 21r34
 . 30r34 30r47 31r24 48r42
-48a9 Letters{string} 27|13m18 13r73 23m9 23r55 35r25 36m28 36r50 53r25 54r38
-. 58m9
-49i9 Length{natural} 27|34r21 40m22 50r31 52r21 59m9
+48a9 Letters{string} 27|13m18 13r73 23m9 23r55 35r25 36m28 36r50 50r31 53r25
+. 54r38 58m9
+49i9 Length{natural} 27|34r21 40m22 52r21 59m9
 X 26 wordpkg-wordops.ads
 2k17 wordops 25|8k9 26|8l13 8e20 27|3b22 62l13 62t20
 3V14*to_Upper{25|10R10} 3>23 27|9b13 15l8 15t16

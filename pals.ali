@@ -4,6 +4,7 @@ P ZX
 
 RN
 RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
@@ -13,7 +14,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U pals%b		pals.adb		6036acd0 NE OO SU IL
+U pals%b		pals.adb		3ad2cd30 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.characters%s	a-charac.ads		a-charac.ali
 Z ada.characters.handling%s  a-chahan.adb	a-chahan.ali
@@ -43,7 +44,7 @@ D a-tiinio.ads		20180524051734 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20180524051736 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051734 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
-D pals.adb		20181124041410 20768672 pals%b
+D pals.adb		20181124071315 7a92e792 pals%b
 D system.ads		20180524051735 085b6ffb system%s
 D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051736 54135002 system.exception_table%s
@@ -62,36 +63,38 @@ D wordpkg.adb		20181124033148 a77be6f0 wordpkg%b
 D wordpkg-palindromes.ads  20181124033148 37cb3921 wordpkg.palindromes%s
 D wordpkg-palindromes.adb  20181124034721 a61e9890 wordpkg.palindromes%b
 D wordpkg-wordops.ads	20181124033148 cbd98e25 wordpkg.wordops%s
-D wordpkg-wordops.adb	20181124033148 52b07623 wordpkg.wordops%b
+D wordpkg-wordops.adb	20181124064303 edeb6ac0 wordpkg.wordops%b
 X 1 ada.ads
 16K9*Ada 20e8 14|4r6 4r23 5r6 5r31
 X 5 a-inteio.ads
 18K13*Integer_Text_IO[10|46] 14|5w10 5r35
 X 9 a-textio.ads
 49K13*Text_IO 471e16 14|4w10 4r27
-166U14*New_Line 14|31s13 36s13 40s13 44s13 48s13 52s13 56s13 60s13 63s9
+166U14*New_Line 14|31s13 37s13 42s13 46s13 51s13 55s13 60s13 64s13 68s9
 184V13*End_Of_File{boolean} 14|23s14
-242U14*Put 14|29s13 34s13 38s13 42s13 46s13 50s13 54s13 58s13
-263U14*Put_Line 14|32s13 37s13 45s13 53s13 61s13
+242U14*Put 14|29s13 32s13 35s13 38s13 40s13 44s13 47s13 49s13 53s13 56s13
+. 58s13 62s13 65s13
+263U14*Put_Line 14|33s13 39s13 48s13 57s13 66s13 72s13
 X 14 pals.adb
-7U11*pals 7b11 65l5 65t9
+7U11*pals 7b11 73l5 73t9
 9K12 myword[28|8] 10r8 12r23 15r23
 12K12 ops[32|2] 13r8
 15K12 pal[30|6] 16r8
-18r4 possible_pal{28|10R10[9]} 24m13 25r45 26r32 28r19 30r17 35r17 43r17
-. 51r17 59r17
-19r4 remove_noletter{28|10R10[9]} 25m9 33r22 39r17
-20r4 upper_case{28|10R10[9]} 26m9 27r50 41r22 47r17
-21r4 non_letter_and_upper{28|10R10[9]} 27m9 49r22 55r17
+18r4 possible_pal{28|10R10[9]} 24m13 25r45 26r32 28r19 30r17 36r17 45r17
+. 54r17 63r17
+19r4 remove_noletter{28|10R10[9]} 25m9 34r22 41r17
+20r4 upper_case{28|10R10[9]} 26m9 27r50 43r22 50r17
+21r4 non_letter_and_upper{28|10R10[9]} 27m9 52r22 59r17
 X 28 wordpkg.ads
 8k9*WordPkg 14|1w6 2r6 3r6 9r26 28|52e12
 10R10 word 14|18r19[9] 19r22[9] 20r17[9] 21r27[9]
+12X5 WordTooLong 14|71r14[9]
 39U15 Get 14|24s9[9]
-43U15 Put 14|30s13[9] 35s13[9] 39s13[9] 43s13[9] 47s13[9] 51s13[9] 55s13[9]
-. 59s13[9]
+43U15 Put 14|30s13[9] 36s13[9] 41s13[9] 45s13[9] 50s13[9] 54s13[9] 59s13[9]
+. 63s13[9]
 X 30 wordpkg-palindromes.ads
 6k17 Palindromes 14|3w14 30|8e24
-7V14 is_Pal{boolean} 14|28s12[15] 33s15[15] 41s15[15] 49s15[15]
+7V14 is_Pal{boolean} 14|28s12[15] 34s15[15] 43s15[15] 52s15[15]
 X 32 wordpkg-wordops.ads
 2k17 wordops 14|2w14 32|8e20
 3V14 to_Upper{28|10R10[14|9]} 14|26s23[12]

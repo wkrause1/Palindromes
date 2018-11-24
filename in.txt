@@ -1,7 +1,5 @@
-b
-madamimadam
-Madam-I-madaM
-madamImAdam
-maDamI'maDam!
-!madam.I'm.Adam?
-randomstring
+b    madamimadam   Madam-I-madaM
+madamImAdam       maDamI'maDam!
+
+         !madam.I'm.Adam?
+    randomstring p
