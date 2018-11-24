@@ -18,6 +18,6 @@ begin
    while not End_Of_File loop
       get(possible_pal);
       new_word := remove_NonLetter(possible_pal);
-      put(possible_pal);
+      put(new_word);
    end loop;
 end pals;
