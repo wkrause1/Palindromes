@@ -13,10 +13,11 @@ procedure pals is
    use ops;
 
    possible_pal : word;
+   new_word : word;
 begin
    while not End_Of_File loop
       get(possible_pal);
-      remove_NonLetter(possible_pal);
+      new_word := remove_NonLetter(possible_pal);
       put(possible_pal);
    end loop;
 end pals;
