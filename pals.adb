@@ -15,6 +15,60 @@ procedure pals is
    package pal is new myword.palindromes;
    use pal;
 
+    procedure print_as_is (w:word) is
+    begin
+        put("String: ");
+        put(w);
+        new_line;
+        put("Status: ");
+        put_line("Palindrome as is");
+    end print_as_is;
+
+    procedure print_remove_non (w, r: word) is
+    begin
+        put("String: ");
+        put(w);
+        new_line;
+        put("Status: ");
+        put_line("Palindrome when non-letters are removed.");
+        put("Palindrome String: ");
+        put(r);
+        new_line;
+    end print_remove_non;
+
+    procedure print_upper(w,r: word) is
+    begin
+        put("String: ");
+        put(w);
+        new_line;
+        put("Put: ");
+        put_line("Palindrome when converted to upper case");
+        put("Palindrome String: ");
+        put(r);
+        new_line;
+    end print_upper;
+
+    procedure print_upper_remove_non (w,r: word) is
+    begin
+        put("String: ");
+        put(w);
+        new_line;
+        put("Status: ");
+        put_line("Palindrome when converted to upper case and non-letters are removed");
+        put("Palindrome String: ");
+        put(r);
+        new_line;
+    end print_upper_remove_non;
+
+    procedure print_non_palindrome (w:word) is
+    begin
+        put("String: ");
+        put(w);
+        new_line;
+        put("Status: ");
+        put_line("Never a palindrome");
+    end print_non_palindrome;
+
    possible_pal : word;
    remove_noletter : word;
    upper_case : word;
@@ -26,44 +80,15 @@ begin
         upper_case := to_upper(possible_pal);
         non_letter_and_upper := remove_nonletter(upper_case);
         if is_pal(possible_pal) then
-            put("String: ");
-            put(possible_pal);
-            new_line;
-            put("Status: ");
-            put_line("Palindrome as is");
+           print_as_is(possible_pal);
         elsif is_pal(remove_noletter) then
-            put("String: ");
-            put(possible_pal);
-            new_line;
-            put("Status: ");
-            put_line("Palindrome when non-letters are removed.");
-            put("Palindrome String: ");
-            put(remove_noletter);
-            new_line;
+            print_remove_non(possible_pal, remove_noletter);
         elsif is_pal(upper_case) then
-            put("String: ");
-            put(possible_pal);
-            new_line;
-            put("Put: ");
-            put_line("Palindrome when converted to upper case");
-            put("Palindrome String: ");
-            put(upper_case);
-            new_line;
+            print_upper(possible_pal, upper_case);
         elsif is_pal(non_letter_and_upper) then
-            put("String: ");
-            put(possible_pal);
-            new_line;
-            put("Status: ");
-            put_line("Palindrome when converted to upper case and non-letters are removed");
-            put("Palindrome String: ");
-            put(non_letter_and_upper);
-            new_line;
+            print_upper_remove_non(possible_pal, non_letter_and_upper);
         else
-            put("String: ");
-            put(possible_pal);
-            new_line;
-            put("Status: ");
-            put_line("Never a palindrome");
+           print_non_palindrome(possible_pal);
         end if;
         new_line;
     end loop;
