@@ -94,5 +94,8 @@ begin
     end loop;
     exception
         when WordTooLong => 
-            put_line("Sorry, word length was longer than allowed. Please shorten word and try again.");
+            put("Sorry, ");
+            put(possible_pal);
+            put(" is too long to process. Please try again with a shorter word.");
+            new_line;
 end pals;
