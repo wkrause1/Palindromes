@@ -31,9 +31,9 @@ package body wordpkg.wordops is
       nonletter_word : Word;
       counter: Natural := 1;
    begin
-      for I in 1..w.Length loop
-         if Is_Letter(w.Letters(I)) then
-            nonletter_word.Letters(counter) := w.Letters(I);
+      for i in 1..w.Length loop
+         if Is_Letter(w.Letters(i)) then
+            nonletter_word.Letters(counter) := w.Letters(i);
             counter := counter + 1;
          end if;
       end loop;
@@ -49,9 +49,9 @@ package body wordpkg.wordops is
       counter: Natural := 1;
       new_string: String(1..w.Letters'length);
    begin
-      for I in 1..w.Length loop
-         if Is_Letter(w.Letters(I)) then
-            new_string(counter) := w.Letters(I);
+      for i in 1..w.Length loop
+         if Is_Letter(w.Letters(i)) then
+            new_string(counter) := w.Letters(i);
             counter := counter + 1;
          end if;
       end loop;

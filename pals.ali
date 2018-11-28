@@ -61,9 +61,9 @@ D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
 D wordpkg.ads		20181124033148 c204a758 wordpkg%s
 D wordpkg.adb		20181126031636 a77be6f0 wordpkg%b
 D wordpkg-palindromes.ads  20181124033148 37cb3921 wordpkg.palindromes%s
-D wordpkg-palindromes.adb  20181124034721 a61e9890 wordpkg.palindromes%b
+D wordpkg-palindromes.adb  20181128212344 a61e9890 wordpkg.palindromes%b
 D wordpkg-wordops.ads	20181124033148 cbd98e25 wordpkg.wordops%s
-D wordpkg-wordops.adb	20181124064303 edeb6ac0 wordpkg.wordops%b
+D wordpkg-wordops.adb	20181128212417 edeb6ac0 wordpkg.wordops%b
 X 1 ada.ads
 16K9*Ada 20e8 14|4r6 4r23 5r6 5r31
 X 5 a-inteio.ads

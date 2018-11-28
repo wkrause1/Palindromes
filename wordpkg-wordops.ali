@@ -42,7 +42,7 @@ D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
 D wordpkg.ads		20181124033148 c204a758 wordpkg%s
 D wordpkg-wordops.ads	20181124033148 cbd98e25 wordpkg.wordops%s
-D wordpkg-wordops.adb	20181124064303 edeb6ac0 wordpkg.wordops%b
+D wordpkg-wordops.adb	20181128212417 edeb6ac0 wordpkg.wordops%b
 X 1 ada.ads
 16K9*Ada 20e8 27|2r6 2r35 13r29 23r20
 X 2 a-charac.ads
@@ -72,8 +72,8 @@ X 27 wordpkg-wordops.adb
 10r7 upper_word{25|10R10} 12m7 13m7 13r62 14r14
 31r7 nonletter_word{25|10R10} 36m13 40m7 41r14
 32i7 counter{natural} 36r36 37m13 37r24 40r32
-34i11 I{integer} 35r33 36r58
+34i11 i{integer} 35r33 36r58
 49i7 counter{natural} 54r24 55m13 55r24 59r19
 50a7 new_string{string} 54m13 58r20
-52i11 I{integer} 53r33 54r46
+52i11 i{integer} 53r33 54r46
 

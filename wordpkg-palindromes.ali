@@ -36,7 +36,7 @@ D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
 D wordpkg.ads		20181124033148 c204a758 wordpkg%s
 D wordpkg-palindromes.ads  20181124033148 37cb3921 wordpkg.palindromes%s
-D wordpkg-palindromes.adb  20181124034721 a61e9890 wordpkg.palindromes%b
+D wordpkg-palindromes.adb  20181128212344 a61e9890 wordpkg.palindromes%b
 X 23 wordpkg.ads
 8k9*WordPkg 52e12 24|6r9 8r5 25|2r14 17r5
 10R10*word 50e15 24|7r24 25|7r24
@@ -47,5 +47,5 @@ X 24 wordpkg-palindromes.ads
 7V14*is_Pal{boolean} 7>21 25|7b13 15l8 15t14
 7r21 w{23|10R10} 25|7b21 9r24 10r13 10r24 10r53 10r64
 X 25 wordpkg-palindromes.adb
-9i11 Offset{integer} 10r42 10r75
+9i11 offset{integer} 10r42 10r75
 
