@@ -15,55 +15,55 @@ procedure pals is
    package pal is new myword.palindromes;
    use pal;
 
-    procedure print_as_is (w:word) is
+    procedure print_as_is (original:word) is
     begin
         put("String: ");
-        put(w);
+        put(original);
         new_line;
         put("Status: ");
         put_line("Palindrome as is");
     end print_as_is;
 
-    procedure print_remove_non (w, r: word) is
+    procedure print_remove_non (original, modified: word) is
     begin
         put("String: ");
-        put(w);
+        put(original);
         new_line;
         put("Status: ");
         put_line("Palindrome when non-letters are removed.");
         put("Palindrome String: ");
-        put(r);
+        put(modified);
         new_line;
     end print_remove_non;
 
-    procedure print_upper(w,r: word) is
+    procedure print_upper(original, modified: word) is
     begin
         put("String: ");
-        put(w);
+        put(original);
         new_line;
         put("Put: ");
         put_line("Palindrome when converted to upper case");
         put("Palindrome String: ");
-        put(r);
+        put(modified);
         new_line;
     end print_upper;
 
-    procedure print_upper_remove_non (w,r: word) is
+    procedure print_upper_remove_non (original, modified: word) is
     begin
         put("String: ");
-        put(w);
+        put(original);
         new_line;
         put("Status: ");
         put_line("Palindrome when converted to upper case and non-letters are removed");
         put("Palindrome String: ");
-        put(r);
+        put(modified);
         new_line;
     end print_upper_remove_non;
 
-    procedure print_non_palindrome (w:word) is
+    procedure print_non_palindrome (original:word) is
     begin
         put("String: ");
-        put(w);
+        put(original);
         new_line;
         put("Status: ");
         put_line("Never a palindrome");

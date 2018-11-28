@@ -41,7 +41,7 @@ D s-traent.ads		20180524051734 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051735 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
 D wordpkg.ads		20181124033148 c204a758 wordpkg%s
-D wordpkg.adb		20181124033148 a77be6f0 wordpkg%b
+D wordpkg.adb		20181126031636 a77be6f0 wordpkg%b
 X 1 ada.ads
 16K9*Ada 20e8 23|5r6 5r23 24|5r6 5r23
 X 6 a-textio.ads
